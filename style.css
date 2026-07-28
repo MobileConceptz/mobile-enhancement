@@ -29,16 +29,19 @@ body{
 
 /* Logo */
 
+/* Logo */
+
 .logo{
     text-align:center;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .logo img{
-    width:100%;
-    max-width:320px;
-    height:auto;
     display:block;
+    width:60%;
+    max-width:360px;
+    min-width:220px;
+    height:auto;
     margin:0 auto;
 }
 
