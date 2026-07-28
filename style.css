@@ -8,3 +8,54 @@ h2{color:#5a2ca0;text-align:center}
 h3{color:#5a2ca0;margin:0 0 6px}
 .call{display:block;text-align:center;background:#5a2ca0;color:#fff;text-decoration:none;
 padding:14px;border-radius:10px;margin-top:25px;font-weight:bold}
+/* Premium Call Button */
+.call-btn{
+display:block;
+width:100%;
+background:#5B2DA8;
+color:#fff;
+text-decoration:none;
+text-align:center;
+padding:18px;
+font-size:22px;
+font-weight:bold;
+border-radius:15px;
+margin-top:25px;
+transition:0.3s;
+}
+
+.call-btn:hover{
+background:#45208a;
+box-shadow:0 10px 20px rgba(91,45,168,.30);
+transform:translateY(-2px);
+}
+
+/* Scan to Top Up Card */
+.topup{
+margin-top:35px;
+padding:25px;
+text-align:center;
+background:#fafafa;
+border-radius:18px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.topup h2{
+margin-top:0;
+color:#5B2DA8;
+font-size:30px;
+}
+
+.topup img{
+width:220px;
+margin:20px auto;
+display:block;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.18);
+}
+
+.topup p{
+font-size:16px;
+color:#666;
+margin-top:15px;
+}
