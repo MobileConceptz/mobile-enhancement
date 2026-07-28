@@ -1,0 +1,10 @@
+body{margin:0;background:#f3f3f7;font-family:Arial,sans-serif}
+.card{max-width:700px;margin:20px auto;background:#fff;padding:28px;border-radius:16px;
+box-shadow:0 8px 25px rgba(0,0,0,.12)}
+.logo{display:inline-block;background:#5a2ca0;color:#fff;padding:12px 18px;font-weight:bold;font-size:30px}
+.logo span{background:#fff;color:#5a2ca0;padding:12px 18px;margin-left:8px}
+h2{color:#5a2ca0;text-align:center}
+.section{border-top:1px solid #ddd;padding-top:12px;margin-top:14px}
+h3{color:#5a2ca0;margin:0 0 6px}
+.call{display:block;text-align:center;background:#5a2ca0;color:#fff;text-decoration:none;
+padding:14px;border-radius:10px;margin-top:25px;font-weight:bold}
