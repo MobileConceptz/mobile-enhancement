@@ -1,88 +1,164 @@
-body{margin:0;background:#f3f3f7;font-family:Arial,sans-serif}
-.card{max-width:700px;margin:20px auto;background:#fff;padding:28px;border-radius:16px;
-box-shadow:0 8px 25px rgba(0,0,0,.12)}
+/* =========================================
+   Mobile Enhancement
+   style.css
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f3f3f7;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333;
+    padding:20px;
+}
+
+/* Main Card */
+
+.card{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+/* Logo */
+
 .logo{
     text-align:center;
-    margin-bottom:25px;
+    margin-bottom:15px;
 }
 
 .logo img{
     width:100%;
-    max-width:2400px;
+    max-width:320px;
     height:auto;
     display:block;
-    margin:auto;
+    margin:0 auto;
 }
-h2{color:#5a2ca0;text-align:center}
-.section{border-top:1px solid #ddd;padding-top:12px;margin-top:14px}
-h3{color:#5a2ca0;margin:0 0 6px}
-.call{display:block;text-align:center;background:#5a2ca0;color:#fff;text-decoration:none;
-padding:14px;border-radius:10px;margin-top:25px;font-weight:bold}
-/* Premium Call Button */
+
+/* Headings */
+
+h2{
+    color:#5B2DA8;
+    text-align:center;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+h3{
+    color:#5B2DA8;
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+/* Paragraph */
+
+p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* Sections */
+
+.section{
+    border-top:1px solid #dddddd;
+    padding-top:18px;
+    margin-top:20px;
+}
+
+/* Call Button */
+
 .call-btn{
-display:block;
-width:100%;
-background:#5B2DA8;
-color:#fff;
-text-decoration:none;
-text-align:center;
-padding:18px;
-font-size:22px;
-font-weight:bold;
-border-radius:15px;
-margin-top:25px;
-transition:0.3s;
+    display:block;
+    width:100%;
+    text-align:center;
+    background:#5B2DA8;
+    color:#fff;
+    text-decoration:none;
+    padding:18px;
+    border-radius:15px;
+    margin-top:25px;
+    font-size:22px;
+    font-weight:bold;
+    transition:.3s;
 }
 
 .call-btn:hover{
-background:#45208a;
-box-shadow:0 10px 20px rgba(91,45,168,.30);
-transform:translateY(-2px);
+    background:#45208A;
 }
 
-/* Scan to Top Up Card */
+/* QR Section */
+
 .topup{
-margin-top:35px;
-padding:25px;
-text-align:center;
-background:#fafafa;
-border-radius:18px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+    text-align:center;
+    margin-top:35px;
+    background:#fafafa;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 .topup h2{
-margin-top:0;
-color:#5B2DA8;
-font-size:30px;
+    margin-top:0;
+    margin-bottom:20px;
+    color:#5B2DA8;
 }
 
 .topup img{
-width:220px;
-margin:20px auto;
-display:block;
-border-radius:12px;
-box-shadow:0 8px 20px rgba(0,0,0,.18);
+    width:220px;
+    max-width:100%;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
 }
 
 .topup p{
-font-size:16px;
-color:#666;
-margin-top:15px;
+    color:#666;
+    font-size:16px;
 }
-@media (max-width:600px){
 
-    .logo{
-        font-size:28px;
-        padding:15px;
-    }
+/* Mobile */
 
-}
 @media (max-width:700px){
 
+    body{
+        padding:12px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
     .logo img{
-        width:100%;
-        max-width:100%;
-        height:auto;
+        max-width:260px;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
+    h3{
+        font-size:24px;
+    }
+
+    p{
+        font-size:17px;
+    }
+
+    .call-btn{
+        font-size:20px;
+        padding:16px;
+    }
+
+    .topup img{
+        width:180px;
     }
 
 }
