@@ -192,3 +192,161 @@ p{
     background:#47218f;
 
 }
+
+
+/* =========================================
+   Save to Home Screen Modal
+========================================= */
+
+.modal{
+
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.modal-box{
+
+    width:90%;
+    max-width:450px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    position:relative;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+    animation:popup .25s ease;
+
+}
+
+@keyframes popup{
+
+    from{
+
+        transform:scale(.9);
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+        opacity:1;
+
+    }
+
+}
+
+.close{
+
+    position:absolute;
+
+    top:12px;
+    right:18px;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:#5B2DA8;
+
+    font-weight:bold;
+
+}
+
+.modal-box h2{
+
+    text-align:center;
+
+    color:#5B2DA8;
+
+    margin-bottom:12px;
+
+}
+
+.modal-intro{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:20px;
+
+}
+
+.phone-box{
+
+    background:#f7f4ff;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+}
+
+.phone-box h3{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+    color:#5B2DA8;
+
+}
+
+.phone-box ol{
+
+    padding-left:22px;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+.done-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#5B2DA8;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:14px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.done-btn:hover{
+
+    background:#47218f;
+
+}
