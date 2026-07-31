@@ -172,7 +172,80 @@
         </p>
 
     </div>
+<!-- ===========================
+     Save to Home Screen Modal
+=========================== -->
+
+<div id="saveModal" class="modal">
+
+    <div class="modal-box">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>⭐ Save to Home Screen</h2>
+
+        <p class="modal-intro">
+            Save Mobile Enhancement to your Home Screen for quick access.
+        </p>
+
+        <div class="phone-box">
+
+            <h3>📱 Android (Chrome)</h3>
+
+            <ol>
+                <li>Tap the <strong>⋮</strong> (3 dots) in the top-right corner.</li>
+                <li>Select <strong>Add to Home screen</strong>.</li>
+                <li>Tap <strong>Add</strong>.</li>
+            </ol>
+
+        </div>
+
+        <div class="phone-box">
+
+            <h3>🍎 iPhone (Safari)</h3>
+
+            <ol>
+                <li>Tap the <strong>Share</strong> button.</li>
+                <li>Select <strong>Add to Home Screen</strong>.</li>
+                <li>Tap <strong>Add</strong>.</li>
+            </ol>
+
+        </div>
+
+        <button class="done-btn" onclick="closeModal()">
+            Got It
+        </button>
+
+    </div>
 
 </div>
+
+<script>
+
+function openModal() {
+
+    document.getElementById("saveModal").style.display = "flex";
+
+}
+
+function closeModal() {
+
+    document.getElementById("saveModal").style.display = "none";
+
+}
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("saveModal");
+
+    if (event.target === modal) {
+
+        modal.style.display = "none";
+
+    }
+
+}
+
+</script>
 </body>
 </html>
