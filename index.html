@@ -149,7 +149,11 @@
     <a href="contact.vcf" class="save-contact">
         📥 Save Contact
     </a>
+<!-- Save to Home Screen -->
 
+<a href="how-to-save.html" class="save-contact">
+⭐ Save to Home Screen
+</a>
     <!-- QR Code -->
 
     <div class="topup">
@@ -167,32 +171,5 @@
     </div>
 
 </div>
-<a href="install.html" class="save-contact">
-⭐ Add to Home Screen
-</a>
-    <script>
-
-if ("serviceWorker" in navigator) {
-
-    window.addEventListener("load", () => {
-
-        navigator.serviceWorker
-            .register("./service-worker.js")
-            .then(() => {
-
-                console.log("Service Worker Registered");
-
-            })
-            .catch(error => {
-
-                console.log("Registration failed:", error);
-
-            });
-
-    });
-
-}
-
-</script>
 </body>
 </html>
