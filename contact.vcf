@@ -1,10 +1,34 @@
 BEGIN:VCARD
 VERSION:3.0
+N:;Mobile Enhancement;;;
 FN:Mobile Enhancement
 ORG:Mobile Enhancement
+TITLE:Mobile Phone Sales, Repair & Accessories
+
 TEL;TYPE=WORK,VOICE:+6587578777
-EMAIL:info@mobile-enhancement.sg
+
+ADR;TYPE=WORK:;;11 Woodlands Close #06-12 Woodlands 11;Singapore;;737853;Singapore
+
 URL:https://mobileconceptz.github.io/mobile-enhancement/
-ADR:;;Blk 678A Woodlands Ave 6 #01-02 Admiralty Place;Singapore;;731678;Singapore
-NOTE:Sales of New & Used Phones, Accessories, Repair, Trade-In.
+URL:https://maps.google.com/?q=11+Woodlands+Close+Singapore+737853
+
+NOTE:\
+Mobile Enhancement\
+\
+Head Office\
+11 Woodlands Close #06-12 Woodlands 11\
+Singapore 737853\
+\
+Our Services:\
+• Sales of New & Used Mobile Phones\
+• Mobile Phone Accessories\
+• Mobile Phone Repair & Servicing\
+• Attractive Trade-In Prices\
+\
+Branches:\
+North - Blk 678A Woodlands Ave 6 #01-02 Admiralty Place Singapore 731678 Tel: 6612 1546\
+North East - Blk 205 Hougang St 21 #01-129 Singapore 530205 Tel: 6988 2945\
+East - Blk 201D Tampines St 21 #01-1143 Singapore 524201 Tel: 6785 5977\
+West - Blk 533 Choa Chu Kang St 51 #01-08 Limbang Shopping Centre Singapore 680533 Tel: 6610 7839
+
 END:VCARD
