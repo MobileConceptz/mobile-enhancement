@@ -165,3 +165,30 @@ p{
     }
 
 }
+.save-contact{
+
+    display:block;
+    width:100%;
+    background:#5B2DA8;
+    color:#fff;
+    text-decoration:none;
+    text-align:center;
+
+    font-size:22px;
+    font-weight:bold;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    margin:25px 0;
+
+    transition:.3s;
+
+}
+
+.save-contact:hover{
+
+    background:#47218f;
+
+}
