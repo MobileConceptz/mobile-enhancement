@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Install Mobile Enhancement</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f6fb;
+    color:#222;
+
+}
+
+.container{
+
+    max-width:500px;
+    margin:40px auto;
+    padding:25px;
+
+}
+
+.card{
+
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    width:120px;
+    margin-bottom:20px;
+
+}
+
+h1{
+
+    color:#5B2DA8;
+    font-size:34px;
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    color:#666;
+    font-size:18px;
+    margin-bottom:30px;
+
+}
+
+.install{
+
+    background:#5B2DA8;
+    color:white;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+.steps{
+
+    text-align:left;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+.steps li{
+
+    margin-bottom:12px;
+
+}
+
+.tip{
+
+    margin-top:25px;
+
+    padding:15px;
+
+    background:#f3efff;
+
+    border-radius:12px;
+
+    color:#5B2DA8;
+
+    font-weight:bold;
+
+}
+
+.home{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:16px 30px;
+
+background:#5B2DA8;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<img src="logo.png" class="logo">
+
+<h1>Install Mobile Enhancement</h1>
+
+<p class="subtitle">
+Save our digital business card to your Home Screen for quick access.
+</p>
+
+<div class="install">
+⭐ Add to Home Screen
+</div>
+
+<div id="android" style="display:none;">
+
+<h2>Android</h2>
+
+<ol class="steps">
+
+<li>Tap the <strong>⋮</strong> menu in Chrome.</li>
+
+<li>Select <strong>Add to Home screen</strong>.</li>
+
+<li>Tap <strong>Install</strong>.</li>
+
+<li>Our logo will appear like an app.</li>
+
+</ol>
+
+</div>
+
+<div id="iphone" style="display:none;">
+
+<h2>iPhone</h2>
+
+<ol class="steps">
+
+<li>Tap the <strong>Share</strong> button.</li>
+
+<li>Select <strong>Add to Home Screen</strong>.</li>
+
+<li>Tap <strong>Add</strong>.</li>
+
+<li>The Mobile Enhancement icon will appear on your Home Screen.</li>
+
+</ol>
+
+</div>
+
+<div class="tip">
+
+No App Store download required.
+
+Free • Safe • Takes less than 10 seconds.
+
+</div>
+
+<a href="index.html" class="home">
+
+← Back to Digital Name Card
+
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+const ua=navigator.userAgent.toLowerCase();
+
+if(/iphone|ipad|ipod/.test(ua)){
+
+document.getElementById("iphone").style.display="block";
+
+}
+else{
+
+document.getElementById("android").style.display="block";
+
+}
+
+</script>
+
+</body>
+</html>
