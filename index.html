@@ -2,293 +2,595 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Mobile Enhancement</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================================
+           SAVE TO HOME SCREEN POPUP
+        ========================================= */
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.55);
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background: #ffffff;
+            max-width: 500px;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+            position: relative;
+        }
+
+        .modal-content h2 {
+            color: #5B2DA8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .modal-content h3 {
+            color: #5B2DA8;
+            font-size: 22px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .modal-content ol {
+            padding-left: 25px;
+        }
+
+        .modal-content li {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        .close-modal {
+            width: 100%;
+            border: none;
+            background: #5B2DA8;
+            color: white;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .close-modal:hover {
+            background: #47218f;
+        }
+
+        .modal-note {
+            background: #f3edff;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 20px;
+            font-size: 15px;
+            text-align: center;
+            color: #5B2DA8;
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
+
 <div class="card">
 
-    <!-- Logo -->
+
+    <!-- =========================================
+         LOGO
+    ========================================= -->
+
     <div class="logo">
-        <img src="logo.png" alt="Mobile Enhancement Logo">
+
+        <img src="logo.png"
+             alt="Mobile Enhancement Logo">
+
     </div>
 
-    <!-- Services -->
+
+    <!-- =========================================
+         SERVICES
+    ========================================= -->
+
     <h2>Our Services</h2>
 
     <p>
+
         Sales of new &amp; used mobile phones.<br>
+
         Wide range of mobile phone accessories.<br>
+
         Mobile phone repair &amp; servicing.<br>
+
         Attractive Trade-In prices.
+
     </p>
 
-    <!-- Head Office -->
+
+    <!-- =========================================
+         HEAD OFFICE
+    ========================================= -->
+
     <div class="section">
 
         <h3>Head Office</h3>
 
         <p>
+
             11 Woodlands Close<br>
+
             #06-12 Woodlands 11<br>
+
             Singapore 737853<br><br>
 
             Tel: 8757 8777
+
         </p>
 
-        <a href="https://maps.google.com/?q=11+Woodlands+Close+Singapore+737853"
+
+        <a
+            href="https://maps.google.com/?q=11+Woodlands+Close+Singapore+737853"
             target="_blank"
             class="map-btn">
+
             📍 View on Google Maps
+
         </a>
 
     </div>
 
-    <!-- NORTH -->
+
+
+    <!-- =========================================
+         NORTH
+    ========================================= -->
 
     <div class="section">
 
         <h3>NORTH</h3>
 
         <p>
+
             Blk 678A Woodlands Ave 6<br>
+
             #01-02 Admiralty Place<br>
+
             Singapore 731678<br><br>
 
             Tel: 6612 1546
+
         </p>
 
-        <a href="https://maps.google.com/?q=678A+Woodlands+Ave+6+Singapore+731678"
+
+        <a
+            href="https://maps.google.com/?q=678A+Woodlands+Ave+6+Singapore+731678"
             target="_blank"
             class="map-btn">
+
             📍 View on Google Maps
+
         </a>
 
     </div>
 
-    <!-- NORTH EAST -->
+
+
+    <!-- =========================================
+         NORTH EAST
+    ========================================= -->
 
     <div class="section">
 
         <h3>NORTH EAST</h3>
 
         <p>
+
             Blk 205 Hougang St 21<br>
+
             #01-129<br>
+
             Singapore 530205<br><br>
 
             Tel: 6988 2945
+
         </p>
 
-        <a href="https://maps.google.com/?q=205+Hougang+Street+21+Singapore+530205"
+
+        <a
+            href="https://maps.google.com/?q=205+Hougang+Street+21+Singapore+530205"
             target="_blank"
             class="map-btn">
+
             📍 View on Google Maps
+
         </a>
 
     </div>
-<!-- NORTH WEST -->
 
-<div class="section">
 
-    <h3>NORTH WEST</h3>
 
-    <p>
-        Blk 127 Plantation Crescent<br>
-        Plantation Plaza<br>
-        #B1-03<br>
-        Singapore 690127<br><br>
-
-        Tel: 6895 376
-    </p>
-
-    <a href="https://maps.google.com/?q=127+Plantation+Crescent+Singapore+690127"
-        target="_blank"
-        class="map-btn">
-        📍 View on Google Maps
-    </a>
-
-</div>
-
-<!-- BUKIT PANJANG -->
-
-<div class="section">
-
-    <h3>BUKIT PANJANG</h3>
-
-    <p>
-        Blk 259 Bukit Panjang Ring Road<br>
-        #01-26<br>
-        Singapore 671259<br><br>
-
-        Tel: 6895 376
-    </p>
-
-    <a href="https://maps.google.com/?q=259+Bukit+Panjang+Ring+Road+Singapore+671259"
-        target="_blank"
-        class="map-btn">
-        📍 View on Google Maps
-    </a>
-
-</div>
-    <!-- EAST -->
+    <!-- =========================================
+         EAST
+    ========================================= -->
 
     <div class="section">
 
         <h3>EAST</h3>
 
         <p>
+
             Blk 201D Tampines St 21<br>
+
             #01-1143<br>
+
             Singapore 524201<br><br>
 
             Tel: 6785 5977
+
         </p>
 
-        <a href="https://maps.google.com/?q=201D+Tampines+Street+21+Singapore+524201"
+
+        <a
+            href="https://maps.google.com/?q=201D+Tampines+Street+21+Singapore+524201"
             target="_blank"
             class="map-btn">
+
             📍 View on Google Maps
+
         </a>
 
     </div>
 
-    <!-- WEST -->
+
+
+    <!-- =========================================
+         WEST
+         ALL WEST OUTLETS GROUPED HERE
+    ========================================= -->
 
     <div class="section">
 
         <h3>WEST</h3>
 
+
+        <!-- CHOA CHU KANG -->
+
         <p>
-            Blk 533 Choa Chu Kang St 51<br>
+
+            <strong>Blk 533 Choa Chu Kang St 51</strong><br>
+
             Limbang Shopping Centre<br>
+
             #01-08<br>
+
             Singapore 680533<br><br>
 
             Tel: 6610 7839
+
         </p>
 
-        <a href="https://maps.google.com/?q=533+Choa+Chu+Kang+Street+51+Singapore+680533"
+
+        <a
+            href="https://maps.google.com/?q=533+Choa+Chu+Kang+Street+51+Singapore+680533"
             target="_blank"
             class="map-btn">
+
             📍 View on Google Maps
+
+        </a>
+
+
+        <br><br>
+
+
+        <!-- PLANTATION PLAZA -->
+
+        <p>
+
+            <strong>Blk 127 Plantation Crescent</strong><br>
+
+            Plantation Plaza<br>
+
+            #B1-03<br>
+
+            Singapore 690127<br><br>
+
+            Tel: 6895 376
+
+        </p>
+
+
+        <a
+            href="https://maps.google.com/?q=127+Plantation+Crescent+Singapore+690127"
+            target="_blank"
+            class="map-btn">
+
+            📍 View on Google Maps
+
+        </a>
+
+
+        <br><br>
+
+
+        <!-- BUKIT PANJANG -->
+
+        <p>
+
+            <strong>Blk 259 Bukit Panjang Ring Road</strong><br>
+
+            #01-26<br>
+
+            Singapore 671259<br><br>
+
+            Tel: 6895 376
+
+        </p>
+
+
+        <a
+            href="https://maps.google.com/?q=259+Bukit+Panjang+Ring+Road+Singapore+671259"
+            target="_blank"
+            class="map-btn">
+
+            📍 View on Google Maps
+
         </a>
 
     </div>
 
-    <!-- Call Button -->
 
-    <a href="tel:+6587578777" class="call-btn">
+
+    <!-- =========================================
+         CALL HEAD OFFICE
+    ========================================= -->
+
+    <a
+        href="tel:+6587578777"
+        class="call-btn">
+
         📞 Call Head Office
+
     </a>
 
-    <!-- Save Contact -->
 
-  <!-- Save Contact -->
 
-<a href="contact.vcf" class="save-contact">
-    📥 Save Contact
-</a>
+    <!-- =========================================
+         SAVE CONTACT
+    ========================================= -->
 
-<!-- Save to Home Screen -->
+    <a
+        href="contact.vcf"
+        class="save-contact">
 
-<a href="#" class="save-contact" onclick="openModal(); return false;">
-    ⭐ Save to Home Screen
-</a>  
-    <!-- QR Code -->
+        📥 Save Contact
+
+    </a>
+
+
+
+    <!-- =========================================
+         SAVE TO HOME SCREEN
+    ========================================= -->
+
+    <a
+        href="#"
+        class="save-contact"
+        onclick="openModal(); return false;">
+
+        ⭐ Save to Home Screen
+
+    </a>
+
+
+
+    <!-- =========================================
+         TOP UP QR CODE
+    ========================================= -->
 
     <div class="topup">
 
         <h2>📱 Scan to Top Up</h2>
 
-        <a href="topup-qr.png" target="_blank">
-            <img src="topup-qr.png" alt="Top Up QR Code">
+
+        <a
+            href="topup-qr.png"
+            target="_blank">
+
+            <img
+                src="topup-qr.png"
+                alt="Top Up QR Code">
+
         </a>
 
+
         <p>
+
             Scan this QR code to top up your mobile service.
+
         </p>
 
     </div>
-<!-- ===========================
-     Save to Home Screen Modal
-=========================== -->
 
-<div id="saveModal" class="modal">
 
-    <div class="modal-box">
+</div>
 
-        <span class="close" onclick="closeModal()">&times;</span>
 
-        <h2>⭐ Save to Home Screen</h2>
 
-        <p class="modal-intro">
-            Save Mobile Enhancement to your Home Screen for quick access.
+<!-- =========================================
+     SAVE TO HOME SCREEN MODAL
+========================================= -->
+
+<div
+    id="homeScreenModal"
+    class="modal"
+    onclick="closeOutside(event)">
+
+
+    <div class="modal-content">
+
+
+        <h2>⭐ Save Mobile Enhancement</h2>
+
+
+        <p style="text-align:center;">
+
+            Add our digital business card to your
+            phone's Home Screen for quick access.
+
         </p>
 
-        <div class="phone-box">
 
-            <h3>📱 Android (Chrome)</h3>
 
-            <ol>
-                <li>Tap the <strong>⋮</strong> (3 dots) in the top-right corner.</li>
-                <li>Select <strong>Add to Home screen</strong>.</li>
-                <li>Tap <strong>Add</strong>.</li>
-            </ol>
+        <!-- IPHONE -->
+
+        <h3>🍎 iPhone — Safari</h3>
+
+        <ol>
+
+            <li>
+                Tap the
+                <strong>Share</strong>
+                button
+                <br>
+                <small>It looks like a square with an arrow pointing up.</small>
+            </li>
+
+            <li>
+                Scroll down and tap
+                <strong>Add to Home Screen</strong>.
+            </li>
+
+            <li>
+                Tap
+                <strong>Add</strong>
+                at the top right.
+            </li>
+
+            <li>
+                The Mobile Enhancement icon
+                will appear on your Home Screen.
+            </li>
+
+        </ol>
+
+
+
+        <!-- ANDROID -->
+
+        <h3>🤖 Android — Chrome</h3>
+
+        <ol>
+
+            <li>
+                Tap the
+                <strong>⋮ three dots</strong>
+                in the top-right corner.
+            </li>
+
+            <li>
+                Tap
+                <strong>Add to Home screen</strong>.
+            </li>
+
+            <li>
+                Tap
+                <strong>Add</strong>.
+            </li>
+
+            <li>
+                The Mobile Enhancement shortcut
+                will appear on your Home Screen.
+            </li>
+
+        </ol>
+
+
+
+        <div class="modal-note">
+
+            💡 This does NOT install an app.
+            It simply saves a shortcut to this
+            website on your Home Screen.
 
         </div>
 
-        <div class="phone-box">
 
-            <h3>🍎 iPhone (Safari)</h3>
 
-            <ol>
-                <li>Tap the <strong>Share</strong> button.</li>
-                <li>Select <strong>Add to Home Screen</strong>.</li>
-                <li>Tap <strong>Add</strong>.</li>
-            </ol>
+        <button
+            class="close-modal"
+            onclick="closeModal()">
 
-        </div>
-
-        <button class="done-btn" onclick="closeModal()">
             Got It
+
         </button>
+
 
     </div>
 
 </div>
 
+
+
+<!-- =========================================
+     MODAL JAVASCRIPT
+========================================= -->
+
 <script>
 
 function openModal() {
 
-    document.getElementById("saveModal").style.display = "flex";
+    document.getElementById("homeScreenModal").style.display = "block";
 
 }
+
 
 function closeModal() {
 
-    document.getElementById("saveModal").style.display = "none";
+    document.getElementById("homeScreenModal").style.display = "none";
 
 }
 
-window.onclick = function(event) {
 
-    const modal = document.getElementById("saveModal");
+function closeOutside(event) {
 
-    if (event.target === modal) {
+    if (event.target === document.getElementById("homeScreenModal")) {
 
-        modal.style.display = "none";
+        closeModal();
 
     }
 
 }
 
 </script>
+
+
 </body>
+
 </html>
