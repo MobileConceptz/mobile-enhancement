@@ -95,6 +95,13 @@ p{
 .call-btn:hover{
     background:#45208A;
 }
+.map-btn{
+    display:block;
+    margin-bottom:12px;
+}
+
+
+
 
 /* QR Section */
 
