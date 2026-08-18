@@ -357,3 +357,26 @@ p{
     background:#47218f;
 
 }
+/* Head Office Image */
+
+.head-office{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.head-office-img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    border-radius:12px;
+    flex-shrink:0;
+}
+
+.head-office-info{
+    flex:1;
+}
+
+.head-office-info h3{
+    margin-top:0;
+}
